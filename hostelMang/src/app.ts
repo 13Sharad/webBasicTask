@@ -1,4 +1,7 @@
-import { hostelService } from "./service/hostelService";
+import { HostelService } from "./service/hostelService.js";
+import { UI } from "./UI/ui.js";
 
-let Service = new hostelService();
-console.log(Service.loadData());
+const hostelService = new HostelService();
+const ui = new UI(hostelService);
+
+ui.initialize();

@@ -1,4 +1,4 @@
-export interface Rooms{
-    roomNumber: number;
-    isOccupied: boolean;
+export interface Rooms {
+    roomNumber : number,
+    isOccupied : boolean,
 }
