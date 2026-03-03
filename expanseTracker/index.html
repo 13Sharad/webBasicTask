@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<h1> Expense Tracker</h1>
+
+<div class="dashboard">
+    <div>Total Balance: (Rs.)<span id="balance"></span></div>
+    <div>Total Income: (Rs.)<span id="income"></span></div>
+    <div>Total Expense: (Rs.)<span id="expense"></span></div>
+    <div>Monthly Balance: (Rs.)<span id="monthly"></span></div>
+</div>
+
+<form id="transactionForm">
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="number" id="amount" placeholder="Amount" min="1" required>
+    <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+    <select id="category"></select>
+    <input type="date" id="date" required>
+    <button type="submit">Add Transaction</button>
+</form>
+
+<br>
+<hr>
+
+<select id="filterCategory">
+    <option value="All">All Categories</option>
+</select>
+
+<ul id="transactionList"></ul>
+
+<script type="module" src="./dist/app.js"></script>
+
+</body>
+</html>
