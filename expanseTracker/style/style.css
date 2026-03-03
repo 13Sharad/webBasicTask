@@ -1,0 +1,172 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px;
+    color: #333;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard div {
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+}
+
+.dashboard span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Form */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    min-width: 150px;
+    transition: 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+button[type="submit"] {
+    background: #667eea;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #5a67d8;
+}
+
+/* Filter */
+#filterCategory {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+/* Transaction List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 12px auto;
+    padding: 15px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-3px);
+}
+
+/* Income & Expense Styling */
+.income {
+    border-left: 6px solid #2ecc71;
+}
+
+.expense {
+    border-left: 6px solid #e74c3c;
+}
+
+/* Edit/Delete Buttons */
+.edit {
+    background: #f39c12;
+    color: white;
+}
+
+.delete {
+    background: #e74c3c;
+    color: white;
+}
+
+.edit:hover {
+    opacity: 0.85;
+}
+
+.delete:hover {
+    opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    li {
+        width: 95%;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
